@@ -1,0 +1,53 @@
+matOne = []
+
+m=int(input("enter the no of rows:"))
+
+n=int(input("enter the no of col:"))
+
+for i in range(m):
+
+    matOne.append([])
+
+    for j in range(n):
+
+        num = int(input())
+
+        matOne[i].append(num)
+
+matTwo = []
+
+s=int(input("enter the no of row:"))
+
+k=int(input("enter the no of col:"))
+
+for i in range(s):
+
+    matTwo.append([])
+
+    for j in range(k):
+
+        num = int(input())
+
+        matTwo[i].append(num)
+
+matThree = []
+
+for i in range(m):
+
+    matThree.append([])
+
+    for j in range(n):
+
+        sub = matOne[i][j] - matTwo[i][j]
+
+        matThree[i].append(sub)
+
+print("\nSubtraction Result of Two Given Matrices is:")
+
+for i in range(s):
+
+    for j in range(k):
+
+        print(matThree[i][j], end=" ")
+
+    print()
